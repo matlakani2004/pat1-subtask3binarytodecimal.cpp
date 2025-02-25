@@ -16,78 +16,25 @@ return decimal;
 }
 int main(){
   int choice;
-count out << "Conversion Menu:\n";
-count out << "1. Decimal to Binary\n";
-count out << "2. Binary to Decimal\n";
-count out <<"Enter your choice (1 or 2):";
-count in >> choice;
+cout << "Conversion Menu:\n";
+cout << "1. Decimal to Binary\n";
+cout << "2. Binary to Decimal\n";
+cout <<"Enter your choice (1 or 2):";
+cin >> choice;
 
 if (choice == 1){
    int decimal;
-  count out << "Enter a decimal number:";
-  count in >> decimal;
-  count out << "Binary representation:" << decimalToBinary(decimal)
+  cout << "Enter a decimal number:";
+  cin >> decimal;
+  cout << "Binary representation:" << decimalToBinary(decimal)
 } else if (choice == 2 ){
   string binary;
-count out <<"Enter a binary number:";
-count in >> binary;
-count out <<"Decimal representation:" <<binaryToDecimal(binary)
+cout <<"Enter a binary number:";
+cin >> binary;
+cout <<"Decimal representation:" <<binaryToDecimal(binary)
   }else{
-count out << "Invalid choice!\n";
+cout << "Invalid choice!\n";
 }
 
 return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
